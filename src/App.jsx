@@ -2,9 +2,9 @@
 import './App.css'
 
 function App() {
-  <DIV>
+ return (<div>
     <h1></h1>
-    <button className='uppercase bg-green-500 bg-red-700 p-7 '></button>
+    <button className='uppercase bg-green-500 bg-red-700 p-7  '></button>
     <form action="https://getform.io/f/aronwmnb" method="POST">
   <input type="text" name="name" />
   <input type="email" name="email" />
@@ -31,7 +31,7 @@ function App() {
   <button type="submit">Send</button>
 </form>
 
-  </DIV>
+  </div>)
   
 }
 
