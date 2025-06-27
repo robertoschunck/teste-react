@@ -1,35 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  <DIV>
+    <h1></h1>
+    <button className='uppercase bg-green-500 bg-red-700 p-7 '></button>
+    <form action="https://getform.io/f/aronwmnb" method="POST">
+  <input type="text" name="name" />
+  <input type="email" name="email" />
+  <input type="text" name="message" />
+  {/* add hidden Honeypot input to prevent spams */}
+  <input type="hidden" name="_gotcha" style={{ display: "none !important" }} />
+  {/* checkbox handle */}
+  <input
+    type="checkbox"
+    name="subscribe"
+    defaultValue="yes"
+    defaultChecked=""
+  />
+  <input type="hidden" name="subscribe" defaultValue="no" />
+  {/* radio button handle */}
+  <input type="radio" name="gender" defaultValue="male" defaultChecked="" />
+  <input type="radio" name="gender" defaultValue="female" />
+  <input type="radio" name="gender" defaultValue="other" />
+  {/* select field handle */}
+  <select name="work-experience">
+    <option value="one-year">0-1 years</option>
+    <option value="one-five-years">1-5 years</option>
+  </select>
+  <button type="submit">Send</button>
+</form>
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>ola mundo</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+  </DIV>
+  
 }
 
 export default App
+
