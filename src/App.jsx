@@ -6,7 +6,7 @@ import { FaCat } from "react-icons/fa";
   function App() {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center bg-pink-300">
-        <header className="bg-gray-200 p-4 flex items-center justify-center w-full absolute top-0">
+        <header className="bg-white p-4 flex items-center justify-center w-full absolute top-0">
           <FaCat className='text-4xl text-purple-500 m-2' />                                                                                
           <h2 className="text-3xl font-bold text-purple-500">Dudasys</h2>
           <FaCat className='text-4xl text-purple-500 m-2'/>  
